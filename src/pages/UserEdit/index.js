@@ -95,7 +95,7 @@ export default function UserEdit() {
 
           <input value={name} onChange={e => setName(e.target.value)} placeholder='Digite seu nome...'></input>
 
-          <textarea value={bio} onChange={e => setBio(e.target.value)} placeholder='Digite sua bio aqui...'></textarea>
+          <textarea value={bio || ''} onChange={e => setBio(e.target.value)} placeholder='Digite sua bio aqui...'></textarea>
 
           <button type='submit'>Salvar</button>
         </ProfileForm>
